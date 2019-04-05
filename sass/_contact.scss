@@ -1,0 +1,29 @@
+.contact-sec{
+  width: 100%;
+  &__text{
+    h3{
+      color: $color-secondary;
+      font-weight: bold;
+    }
+  }
+  &__content{
+    .contact-form{
+
+      .nameInput input, .emailInput input, .messageInput textarea{
+        background: none;
+        border: none;
+        border-bottom: 1px solid $color-black-light;
+        box-shadow: none;
+        font-size: 1.5rem;
+        color: $color-primary;
+      }
+    }
+
+    .contact-text{
+      font-size: 1.3rem!important;
+    }
+    .contact-text p span i {
+     padding-right: 10px;
+    }
+  }
+}

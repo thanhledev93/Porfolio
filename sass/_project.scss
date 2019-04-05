@@ -1,0 +1,117 @@
+.project-sec {
+  width: 100%;
+  &__text {
+    h3 {
+      color: $color-secondary;
+      font-weight: bold;
+    }
+    p {
+      color: $color-black-light-2;
+      font-size: 1.6rem;
+    }
+    .active,.btn, .btn:focus, .btn:active, .btn-filter-project:focus, .btn-filter-project{
+
+        box-shadow: none;
+
+    }
+    .btn-filter-project{
+      background: none !important;
+      color: $color-primary;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    .btn-filter-project:hover{
+      color: $color-secondary;
+    }
+  }
+  .project__list{
+    min-height: 1000px;
+  }
+
+  //Filter Project
+  .filterring span{
+
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 5px;
+    padding: 15px 20px;
+    transition: all .3s ease 0s;
+  }
+  .filterring span:hover{
+    color: $color-secondary;
+  }
+  .filterring .active{
+    color: $color-secondary;
+  }
+
+
+
+   .item-img{
+    border: 10px solid $color-primary;
+  }
+
+  .item-img{
+    margin-top: 30px;
+    position: relative;
+  }
+  .item-img:hover .item-img-overlay{
+    opacity: 1;
+    transform: scale(1.09);
+  }
+
+  .item-img-overlay{
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transform: scale(0,0);
+    transition: all .5s;
+  }
+  .item-img-overlay .icon{
+    bottom: 30px;
+    color: #eee;
+    font-size: 2rem;
+    height: 3rem;
+    position: absolute;
+    right: 3rem;
+    text-align: center;
+    width: 3rem;
+  }
+  .item-img-overlay p{
+    color: #f2f2f2;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .item-img-overlay h3{
+    color: $color-primary;
+    font-weight: 600;
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-bottom: 3px solid $color-primary;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 575.98px) {
+    min-height: 700px;
+    .filterring {
+      margin: 30px 0 0 0 !important;
+      padding: 0 !important;
+      span{
+        padding: 0 12px !important;
+        margin: 0 !important;
+      }
+    }
+
+  }
+
+}

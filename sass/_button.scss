@@ -1,0 +1,11 @@
+.btn-download{
+  font-size: 1.5rem;
+  background-color: $color-black-dark;
+  border: none;
+  color: $color-primary;
+  font-size: 1.1rem;
+
+  &:hover{
+    background-color: $color-secondary;
+  }
+}

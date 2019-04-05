@@ -1,0 +1,86 @@
+.vertical-nav-wrap{
+  margin-top: 3rem;
+
+  &:before{
+    content:'';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    padding: 15px 40px;
+    box-sizing: border-box;
+
+  }
+
+   ul li:before{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: $color-primary;
+    border-radius: 50%;
+    top: 15px;
+    left: 5rem;
+    transition: all .5s ease-in-out;
+     cursor: pointer;
+  }
+  ul li:hover::before{
+    background: none;
+    border: 2px solid $color-primary;
+  }
+
+   ul li:nth-child(odd) .time,  ul li:nth-child(even) .time{
+    //position: absolute;
+    //top: 20px;
+    //right: 0px;
+     margin-top: -14px;
+    margin-left: 1rem;
+     opacity: 0;
+     padding: 8px 30px;
+
+     transition: all .2s ease-in-out;
+  }
+  ul li:nth-child(odd) .time:hover,  ul li:nth-child(even) .time:hover{
+    animation: toRight 0.5s;
+    animation-fill-mode: forwards;
+
+  }
+
+  ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $color-primary;
+    text-transform: uppercase;
+
+  }
+  ul li .active {
+    opacity: 1 !important;
+
+  }
+  ul li:nth-child(odd) .active:hover,  ul li:nth-child(even) .active:hover{
+    animation: none;
+}
+@keyframes toRight {
+  0%{
+    transform: translateX(3rem);
+    opacity: 0;
+  }
+  100%{
+  transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+}

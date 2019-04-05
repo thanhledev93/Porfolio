@@ -1,0 +1,46 @@
+.intro-sec{
+  width: 100%;
+  .linear-bg{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../img/avatar.jpg");
+    background-size: cover;
+    z-index: 20;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+  &__heading{
+    font-size: 3.6rem;
+    word-spacing: .7rem;
+    line-height: 1.6;
+    min-height: 15rem;
+    width: 80%;
+  }
+
+  .about-heading{
+    color: $color-secondary;
+    font-weight: bold;
+
+    &__text{
+      color: $color-black-light-2;
+      font-size: 1.6rem;
+
+      a{
+        text-decoration: none;
+        color: $color-primary;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  @media (max-width: 575.98px) {
+    .padding-content{
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    &__heading{
+      font-size: 2rem;
+      width: 100%;
+    }
+  }
+}

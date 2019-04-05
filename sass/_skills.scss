@@ -1,0 +1,53 @@
+.skill-sec{
+  width: 100%;
+  &__text{
+    h3{
+      color: $color-secondary;
+      font-weight: bold;
+    }
+     p{
+       color: $color-black-light-2;
+       font-size: 1.6rem;
+     }
+  }
+  &__progress{
+    .progress-bar-wrap{
+      h3{
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+      }
+    }
+    .myProgress {
+      width: 100%;
+      background-color: transparent;
+      position: relative;
+
+      .myBar {
+        width: 20%;
+        height: 5px;
+        background-color: $color-secondary;
+
+      }
+      .percient{
+        width: 20px;
+        transform: translateY(-31px);
+        position: relative;
+        height: 50px;
+      }
+      .percient-text{
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+      }
+      .icon{
+        color: $color-secondary;
+        transform: translateY(8px) translateX(-2px) !important;
+        border: 3px solid;
+        border-radius: 100px;
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+}
